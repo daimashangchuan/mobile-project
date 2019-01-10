@@ -1,0 +1,139 @@
+.article{
+	width: 100%;
+	overflow: hidden;
+	
+	padding: 0;
+	margin-top: 96.625px;
+}
+.art-left{
+	width: 2.08rem;
+	height: 100%;
+	position: relative;
+}
+.art-left ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.art-left li{
+	width: 2.08rem;
+	font-size: 12px;
+    color: #2B333B;
+    border-bottom: 1px solid #D9DDE1;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    line-height: 1;
+    height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.art-left li.now{
+	color: #F01414
+}
+.art-right{
+	width: 7.49374959rem;
+	padding: .42666667rem .21333333rem;
+	height: 100%;
+	background-color: #f3f5f7;
+	position: relative;
+}
+.art-main{
+	position: absolute;
+	top: 0;
+	left: .22666667rem;
+}
+.art-main .web-title{
+	font-size: 100%;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-top: .42666667rem;
+}
+.base-block{
+	background-color: #fff;
+    padding-top: .42666667rem;
+    margin: .42666667rem 0;
+    width: 7.44rem;
+}
+.block-top{
+	margin-top: 0;
+}
+.base-block li{
+	width: 2.477466rem;
+    margin-bottom: .53333333rem;
+    text-align: center;
+    line-height: 1;
+    float: left;
+}
+.base-block li img{
+	margin: 0 auto;
+    height: .96rem;
+    width: .96rem;
+    border-radius: .10666667rem;
+    display: block;
+}
+.base-block li p{
+	display: block;
+    margin-top: .21333333rem;
+    font-size: 10px;
+    color: #2B333B;
+    line-height: .32rem;
+}
+.course-list li{
+	margin-bottom: .42666667rem;
+    position: relative;
+}
+.course-list li img{
+	border-radius: .05333333rem;
+    height: 1.6rem;
+    width: 2.4rem;
+    background-color: #f9f9f9;
+    float: left;
+}
+.course-list li .right-c{
+	width: 4.42rem;
+    height: 1.6rem;
+    margin-left: .3rem;
+}
+.right-c h2{
+	font-size: 13px;
+    line-height: .53333333rem;
+    color: #2B333B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    word-wrap: break-word;
+    font-weight: 400;   
+} 
+.right-c p{
+	margin-left: -.5rem;
+	font-weight: 200;
+    font-size: 12px;
+    color: #71777D;
+    line-height: .53333333rem;
+    transform: scale(0.8);
+}
+.right-c p span.pan{
+	margin-right: .32rem;
+}
+
+
+
+
+
+

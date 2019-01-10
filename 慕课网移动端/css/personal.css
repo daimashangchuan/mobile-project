@@ -1,0 +1,125 @@
+body {
+    background: #fff;
+    color: #5e5e5e;
+    font: 14px/2em "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    max-width: 750px;
+	min-height: 320px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+.wrapper{
+	background: url(../img/bg.png) no-repeat top center;
+    background-size: 100% auto;
+    padding: .85333333rem;
+    padding-top: 2.29333333rem;
+    font-size: .37333333rem;	
+}
+.logo{
+	position: absolute;
+    left: 50%;
+    top: .74666667rem;
+    margin-left: -.53333333rem;
+    width: 1.06666667rem;
+    height: 1.06666667rem;
+    background: url(../img/logo1.png) no-repeat top center;
+    background-size: 100%;
+}   
+.div-input1,.div-input2{
+	height: 1.55rem;
+	position: relative;
+    overflow: hidden;
+    padding-bottom: .21333333rem;   
+}
+.div-input1 span{
+    color: #2B333B;
+    font-size: .42666667rem;
+    line-height: 1.49333333rem;
+    position: relative;
+    z-index: 1;
+}
+.div-input1 .pan{
+	display: inline-block;
+	transform: rotate(90deg);
+	font-size: 10px;
+	margin-left: 0.3rem;
+}
+.div-input1 input,.div-input2 input{
+	padding-left: 2.13333333rem;
+	margin-bottom: .21333333rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #787d82;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4D2B333B;
+    border-radius: 0!important;
+    height: 1.49333333rem;
+    font-size: .42666667rem;
+}
+.div-input1 input.now{
+	border-bottom: 1px solid red;
+}
+.div-input2 input{
+	padding-left: 0;
+}
+.div-input2 p{
+	position: absolute;
+	z-index: 1;
+    right: 0;
+    top: 0;
+    color: #B7BBBF;
+    font-size: .42666667rem;
+    line-height: 1.49333333rem;
+}
+.wrapper .p1{
+	font-size: .32rem;
+    line-height: .32rem;
+    color: #B7BBBF;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.wrapper .p2{
+	text-align: center;
+	margin-top: 0.5rem;
+    color: #fff;
+    background: #F20D0D;
+    font-size: .48rem;
+    line-height: 1.49333333rem;
+    border-radius: .74666667rem;
+}
+.wrapper .p3{
+	margin-top: 0.5rem;
+	color: #F20D0D;
+	text-align: center;
+	padding-top: .42666667rem;
+    padding-bottom: .64rem;
+    font-size: .42666667rem;
+    text-align: center;
+    line-height: .85333333rem;
+}
+.ullist{
+	width: 100%;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+.ullist li{
+	display: inline-block;
+    width: 1.38666667rem;
+    height: 1.38666667rem;
+    border-radius: 50%;
+    background: rgba(43,51,59,.06);
+    margin-right: .42666667rem;
+    margin-left: .42666667rem;
+    text-align: center;
+    line-height: 1.38666667rem;
+}
+
+
+
+
+
+
+
+

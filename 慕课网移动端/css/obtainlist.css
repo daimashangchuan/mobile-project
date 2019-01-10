@@ -1,0 +1,168 @@
+body{
+	background: #f3f5f7;
+}
+.header-wrap{
+    padding: 0.4rem .58rem 0;
+    box-sizing: border-box;
+}
+.header-wrap:before{
+	content: "";
+	height: 0;
+	border-bottom: none;
+}
+.header p{
+	float: left;	
+}
+.header p strong{
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+.header img{
+	float: right;
+}
+.article{
+	margin-top: 1.50rem;
+	position: relative;
+}
+.art-cont{
+	padding-left: .8rem;
+	position: relative;
+}
+.art-cont p{
+	height: .85333333rem;
+}
+.art-line{
+	position: absolute;
+    left: .77333333rem;
+    width: .05333333rem;
+    height: 100%;
+    background-color: #D9DDE1;
+}
+.model{	
+	position: relative;
+    z-index: 1;
+    display: block;
+    width: 8.72rem;
+    margin-left: .8rem;
+    box-sizing: border-box;
+    padding-bottom: .96rem;   
+}
+.model:first-of-type{
+	
+}
+.art-h2{
+	margin-bottom: .37333333rem;
+}
+.art-list{
+	background: #fff;
+    width: 8.18666667rem;
+    height: 3.2rem;
+    border-radius: .21333333rem;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+}
+.art-img{
+	height: 100%;
+    width: 1.6rem;
+    border-top-left-radius: .21333333rem;
+    border-bottom-left-radius: .21333333rem;
+    overflow: hidden;
+}  
+.art-img img{
+	height: 100%;
+	margin-left: -2rem;
+}
+.art-fr{
+	height: 100%;
+    width: 6.58666667rem;
+    padding: .42666667rem;
+    padding-top: .32rem;
+    border-top-right-radius: .21333333rem;
+    border-bottom-right-radius: .21333333rem;
+    box-sizing: border-box;
+    color: #2B333B;
+    background-color: #fff;
+    position: relative;
+}
+.art-fr h2{
+	font-weight: 600;
+	height: .64rem;
+	font-size: .42666667rem;
+    line-height: .64rem;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    color: #2B333B;
+}
+.art-fr .p1{
+	margin-top: .26666667rem;
+    font-size: 12px;
+    line-height: .37333333rem;
+    color: #71777D;
+}
+.art-fr .p2{
+	margin-top: .26666667rem;
+    font-size: 14px;
+    line-height: .42666667rem;
+}
+.art-fr .p2 span{
+	margin-left: 0.3rem;
+}
+.art-fr img{
+	position: absolute;
+    right: .42666667rem;
+    bottom: .42666667rem;
+    display: block;
+    width: 1.65333333rem;
+    height: .8rem;
+}
+.imgimg{
+	font-size: 16px;
+    color: #FFF;
+    line-height: .48rem;
+    text-align: center;
+    height: 3.2rem;
+    padding-top: .64rem;
+    box-sizing: border-box;
+    background: url(../img/finishbg@2x.png) no-repeat top center;
+    background-size: 100%;
+}
+.imgimg img{
+	width: .90666667rem;
+    height: .96rem;
+    margin: 0 auto .32rem;  
+}
+.art-foot{
+	color: #71777D;
+    font-size: 14px;
+    line-height: .42666667rem;
+    margin-top: .64rem;
+    padding-left: 1.5666667rem;
+    padding-right: .42666667rem;
+}
+.model-foot p{
+	float: left;
+    width: 49%;
+    margin-bottom: .42666667rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.plan-final-desc{
+	color: #71777D;
+    font-size: 12px;
+    line-height: .48rem;
+    padding-left: .85333333rem;
+    padding-right: .85333333rem;
+    text-align: justify;
+}
+.plan-final-desc span{
+	color: #9447EB;
+}
+
+
+
+
+

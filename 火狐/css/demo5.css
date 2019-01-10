@@ -1,0 +1,37 @@
+body{
+	position: relative;
+	width: 100%;
+	max-width: 3.75rem;
+	min-width: 1.6rem;
+	margin: 0 auto;
+	font-size: 0.13rem;
+	color: #4a4a4a;
+	padding:0.1rem 0.2rem 0;
+	box-sizing: border-box;
+}
+.one{
+	box-sizing: border-box;
+	padding: 0.15rem 0.2rem;
+	box-shadow: 0px 4px 20px 0px rgba(28, 41, 47, 0.16);
+	border-radius: 0.05rem;
+	position: relative;
+	background: #fff;
+	margin-bottom: 0.1rem;
+}
+.one p{
+	margin-top: 0.05rem;
+	font-size: 0.09rem;
+	color: #bfbfcd;
+}
+.one span{
+	height: 0.2rem;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0.2rem;
+	color: red;
+	margin: auto;
+}
+
+

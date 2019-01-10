@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--https://m.imooc.com-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Cache-Control" content="max-age=180">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>慕课网-程序员的梦工厂</title>
+		<link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/rem.js"></script>
+		<script src="js/index.js"></script>
+		<!-- {*
+			公共头部使用规则：
+			1、分为一级目录，二级目录，三级目录  根据 1 2 3来区分
+			（1）一级目录包括底部导航的 首页 课程 实战 就业班 我的共5个栏目，其中除掉‘我的’ 其他四个栏目均有logo 搜索框
+			（2）二级目录包括banner下方的导航 （除掉与底部导航重复的实战和就业班） 猿问和手记共两个栏目  返回键 名称 搜索框 头像
+			（3）剩下的均为三级目录 返回键 名称 收藏 分享 头像
+			2、进一步说明
+			（1）PAGE_CONFIG.directory == 1  判断是否是首页，首页显示logo，无名称，有搜索框；非首页显示logo，名称，有搜索框
+			（2）PAGE_CONFIG.directory == 2  无特殊判断
+			（3）PAGE_CONFIG.directory == 3  其中是否显示分享和收藏图标 由share和collection字段控制
+			3、总结：当为一级或者二级目录时，才会有搜索框和显示搜索历史记录
+			 
+			*} -->
+	</head>
+	<body>
+		<div class="header-wrap">
+			<div class="header">
+				<img class="logo" src="img/logo.png" alt="" />
+				<img onclick="window.location.href = 'search.html'" class="imgleft icon" src="img/2018-12-25_095000.png"/>
+				<img onclick="window.location.href = 'personal.html'" class="icon" src="img/2018-12-25_095650.png"/>
+				<span>下载客户端</span>
+			</div>
+			<div class="nav">
+				<a class="now" href="javascript:;">首页</a>
+				<a href="course.html">课程</a>
+				<a href="obtain.html">就业班</a>
+				<a href="combat.html">实战</a>
+				<a href="rain.html">手记</a>
+				<a href="programmer.html">猿问</a>
+			</div>
+		</div>	
+		<div class="article">
+			<div class="banner">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      	<div class="swiper-slide"><img src="img/5c1728d700016b9c18000600.jpg"/></div>
+				      	<div class="swiper-slide"><img src="img/5c20809e000111b009000300.jpg"/></div>
+				      	<div class="swiper-slide"><img src="img/5c2080af0001d17d09000300.jpg"/></div>
+				      	<div class="swiper-slide"><img src="img/5c2080d40001fb0018000600.jpg"/></div>
+				      	<div class="swiper-slide"><img src="img/5c2080f30001b43918000600.jpg"/></div>
+				      	<div class="swiper-slide"><img src="img/5c2081160001ba5518000600.jpg"/></div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+				<script src="swiper-4.4.2/dist/js/swiper.min.js"></script>
+				<script>
+				    var swiper = new Swiper('.swiper-container', {
+				      	slidesPerView: 1,
+				      	spaceBetween: 30,
+				      	pagination: {
+				        	el: '.swiper-pagination',
+				        	clickable: true,
+				      	},
+				      	speed:200,
+				      	autoplay:true,
+				      	autoplay:{
+				      		disableOnInteraction:false,
+				      		delay:2000
+				      	},
+				      	loop: true,
+				    });
+				</script>
+			</div>
+			<div class="section1">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					实战推荐
+					<span class="pan">更多实战</span>
+				</div>
+				<div class="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul>
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section1 section2">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					新上好课
+				</div>
+				<div class="one-top">
+					<div class="one-top-box">
+						<h2>Java</h2>
+						<p>剑指Java面试-Offer直通车</p>
+						<p>￥249.00<span>&clubs;605</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Android</h2>
+						<p>新版React Native+Redux打造高质量上线App</p>
+						<p>￥399.00<span>&clubs;124</span></p>
+					</div>
+				</div>
+				<div class="one-cont-swiper">
+					<div class="swiper-container cont-swiper">
+					    <div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/5bfe54bd000131e306000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+												<p class="p2">中级 · 1028人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5c203a4b0001dcf306000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Hadoop基础与电商行为日志分析   新手入门大数据</p>
+												<p class="p2">中级 · 14人在学</p>
+												<p class="p3">¥236.00&nbsp;&nbsp;限时促销</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b95cd0e0001e8c406000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">应用Dubbo框架打造仿猫眼项目 理解微服务核心思想 </p>
+												<p class="p2">中级 · 420人在学</p>
+												<p class="p3">¥366.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/5b0cb5df00016e5405400300-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">HTTP协议原理+实践 Web开发工程师必学</p>
+												<p class="p2">中级· 1028人在学</p>
+												<p class="p3">¥99.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5c0a36790001b17606000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Taro多端框架开发外卖首页</p>
+												<p class="p2">中级 · 2881人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5c1701d10001a15e06000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">LoadRunner性能测试实战训练营 </p>
+												<p class="p2">中级 · 11人在学</p>
+												<p class="p3">¥299.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>				
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+					<script>
+						var swiper1 = new Swiper('.cont-swiper', {
+						    pagination: {
+							    el: '.swiper-pagination',
+							},
+						});
+					</script>
+				</div>
+			</div>
+			<div class="section1 section3">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					实战推荐
+					<span class="pan"><span>专题</span>Vue.js:入门到实例项目开发</span>
+				</div>
+				<div class="one-top">
+					<div class="one-top-box top-box">
+						<h2>前端开发工程师</h2>
+						<p style="color: #FF7900;">前端零基础入门</p>
+						<p>￥568.00<span>5步/33课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box1">
+						<h2>JAVA开发工程师</h2>
+						<p style="color: #FF006E;">Java零基础入门</p>
+						<p>￥358.00<span>3步/27课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box2">
+						<h2>Android开发工程师</h2>
+						<p style="color: #00B43C;">Android零基础入门</p>
+						<p>￥236.00<span>5步/43课</span></p>
+					</div>
+					<div class="one-top-box one-top-box3">
+						<h2>Java</h2>
+						<p>Springboot 微信小程序 – 微信登录功能实战</p>
+						<p>免费<span>&clubs;142524</span></p>
+					</div>
+				</div>
+				<div class="one-cont-swiper">
+					<div class="swiper-container cont-swiper1">
+					    <div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/5b4bfb7000019d2e10800600-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">纯正商业级应用-微信小程序开发实战</p>
+												<p class="p2">中级 · 1028人在学</p>
+												<p class="p3">￥366.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5934bac20001a5c906000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">SVN从入门到放弃</p>
+												<p class="p2">高级 · 18822人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b17bad10001535305400300-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Vue.js 源码全方位深入解析 </p>
+												<p class="p2">高级 · 420人在学</p>
+												<p class="p3">¥488.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/586395f4000145e006000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">微服务架构在二手交易平台（转转）中的实践</p>
+												<p class="p2">中级· 1028人在学</p>
+												<p class="p3">¥99.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5bc3f1420001abf206000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Socket网络编程进阶与实战</p>
+												<p class="p2">中级 · 2881人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b8ce427000121b406000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Kafka流处理平台 </p>
+												<p class="p2">中级 · 11人在学</p>
+												<p class="p3">¥299.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>				
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+					<script>
+						var swiper2 = new Swiper('.cont-swiper1', {
+						    pagination: {
+							    el: '.swiper-pagination',
+							},
+						});
+					</script>
+				</div>
+			</div>
+			<div class="section1 section3 section4">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					技能提升
+				</div>
+				<div class="one-top">
+					<div class="one-top-box top-box">
+						<h2>前端开发工程师</h2>
+						<p style="color: #FF7900;">前端零基础入门</p>
+						<p>￥568.00<span>5步/33课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box1">
+						<h2>JAVA开发工程师</h2>
+						<p style="color: #FF006E;">Java零基础入门</p>
+						<p>￥358.00<span>3步/27课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box2">
+						<h2>Android开发工程师</h2>
+						<p style="color: #00B43C;">Android零基础入门</p>
+						<p>￥236.00<span>5步/43课</span></p>
+					</div>
+					<div class="one-top-box one-top-box3">
+						<h2>Java</h2>
+						<p>Springboot 微信小程序 – 微信登录功能实战</p>
+						<p>免费<span>&clubs;142524</span></p>
+					</div>
+				</div>
+				<div class="one-cont-swiper">
+					<div class="swiper-container cont-swiper1">
+					    <div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/5b4bfb7000019d2e10800600-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">纯正商业级应用-微信小程序开发实战</p>
+												<p class="p2">中级 · 1028人在学</p>
+												<p class="p3">￥366.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5934bac20001a5c906000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">SVN从入门到放弃</p>
+												<p class="p2">高级 · 18822人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b17bad10001535305400300-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Vue.js 源码全方位深入解析 </p>
+												<p class="p2">高级 · 420人在学</p>
+												<p class="p3">¥488.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/586395f4000145e006000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">微服务架构在二手交易平台（转转）中的实践</p>
+												<p class="p2">中级· 1028人在学</p>
+												<p class="p3">¥99.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5bc3f1420001abf206000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Socket网络编程进阶与实战</p>
+												<p class="p2">中级 · 2881人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b8ce427000121b406000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Kafka流处理平台 </p>
+												<p class="p2">中级 · 11人在学</p>
+												<p class="p3">¥299.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>				
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+					<script>
+						var swiper2 = new Swiper('.cont-swiper1', {
+						    pagination: {
+							    el: '.swiper-pagination',
+							},
+						});
+					</script>
+				</div>
+			</div>
+			<div class="section1 section3">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					前沿技术
+					<span class="pan"><span>专题</span>最主流的前端框架有哪些？</span>
+				</div>
+				<div class="one-top">
+					<div class="one-top-box top-box">
+						<h2>前端开发工程师</h2>
+						<p style="color: #FF7900;">前端零基础入门</p>
+						<p>￥568.00<span>5步/33课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box1">
+						<h2>JAVA开发工程师</h2>
+						<p style="color: #FF006E;">Java零基础入门</p>
+						<p>￥358.00<span>3步/27课</span></p>
+					</div>
+					<div class="one-top-box top-box one-top-box2">
+						<h2>Android开发工程师</h2>
+						<p style="color: #00B43C;">Android零基础入门</p>
+						<p>￥236.00<span>5步/43课</span></p>
+					</div>
+					<div class="one-top-box one-top-box3">
+						<h2>Java</h2>
+						<p>Springboot 微信小程序 – 微信登录功能实战</p>
+						<p>免费<span>&clubs;142524</span></p>
+					</div>
+				</div>
+				<div class="one-cont-swiper">
+					<div class="swiper-container cont-swiper1">
+					    <div class="swiper-wrapper">
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/5b4bfb7000019d2e10800600-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">纯正商业级应用-微信小程序开发实战</p>
+												<p class="p2">中级 · 1028人在学</p>
+												<p class="p3">￥366.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5934bac20001a5c906000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">SVN从入门到放弃</p>
+												<p class="p2">高级 · 18822人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b17bad10001535305400300-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Vue.js 源码全方位深入解析 </p>
+												<p class="p2">高级 · 420人在学</p>
+												<p class="p3">¥488.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>
+					      	<div class="swiper-slide">
+					      		<div class="one-cont">
+									<ul>
+										<li>
+											<img src="img/586395f4000145e006000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">微服务架构在二手交易平台（转转）中的实践</p>
+												<p class="p2">中级· 1028人在学</p>
+												<p class="p3">¥99.00</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5bc3f1420001abf206000338-360-202.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Socket网络编程进阶与实战</p>
+												<p class="p2">中级 · 2881人在学</p>
+												<p class="p3">免费</p>
+											</div>
+										</li>
+										<li>
+											<img src="img/5b8ce427000121b406000338-590-330.jpg" alt="" />
+											<div class="list">
+												<p class="p1">Kafka流处理平台 </p>
+												<p class="p2">中级 · 11人在学</p>
+												<p class="p3">¥299.00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+					      	</div>				
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+					<script>
+						var swiper2 = new Swiper('.cont-swiper1', {
+						    pagination: {
+							    el: '.swiper-pagination',
+							},
+						});
+					</script>
+				</div>
+			</div>
+			<div class="section1 section5">
+				<div class="one-tit">
+					<span class="index-icon icon1"></span>
+					猜你喜欢
+				</div>
+				<div class="one-top" id="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul id="ullist">
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section1 section5 displaynone">
+				<div class="one-top" id="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul id="ullist">
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section1 section5 displaynone">
+				<div class="one-top" id="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul id="ullist">
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section1 section2 section5 displaynone">
+				<div class="one-top" id="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul id="ullist">
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="one-top" id="one-top">
+					<div class="one-top-box">
+						<h2>大数据</h2>
+						<p>Hadoop基础与电商行为日志分析   新手入门大数据</p>
+						<p>￥236.00<span>&clubs;14</span></p>
+					</div>
+					<div class="one-top-box one-top-box1">
+						<h2>Python</h2>
+						<p>全面系统 Python3入门+进阶课程 更快上手实际开发</p>
+						<p>￥366.00<span>&clubs;7002</span></p>
+					</div>
+				</div>
+				<div class="one-cont">
+					<ul id="ullist">
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b4c817f0001945605400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">Spring Boot 2.0深度实践之核心技术篇</p>
+								<p class="p2">高级 · 1028人在学</p>
+								<p class="p3">¥366.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5ad05dc00001eae705400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">玩转数据结构 从入门到进阶</p>
+								<p class="p2">中级 · 2881人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+						<li>
+							<img src="img/5b723de80001ec9b05400300-360-202.jpg" alt="" />
+							<div class="list">
+								<p class="p1">java设计模式精讲  Debug 方式+内存分析 </p>
+								<p class="p2">中级 · 1098人在学</p>
+								<p class="p3">¥299.00</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="btn-like">点击加载更多</div>	
+		</div>
+	</body>
+</html>

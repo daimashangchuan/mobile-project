@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--https://m.imooc.com-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Cache-Control" content="max-age=180">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>IT技术文章_慕课网手记</title>
+		<link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/rain.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/rem.js"></script>
+		<!-- {*
+			公共头部使用规则：
+			1、分为一级目录，二级目录，三级目录  根据 1 2 3来区分
+			（1）一级目录包括底部导航的 首页 课程 实战 就业班 我的共5个栏目，其中除掉‘我的’ 其他四个栏目均有logo 搜索框
+			（2）二级目录包括banner下方的导航 （除掉与底部导航重复的实战和就业班） 猿问和手记共两个栏目  返回键 名称 搜索框 头像
+			（3）剩下的均为三级目录 返回键 名称 收藏 分享 头像
+			2、进一步说明
+			（1）PAGE_CONFIG.directory == 1  判断是否是首页，首页显示logo，无名称，有搜索框；非首页显示logo，名称，有搜索框
+			（2）PAGE_CONFIG.directory == 2  无特殊判断
+			（3）PAGE_CONFIG.directory == 3  其中是否显示分享和收藏图标 由share和collection字段控制
+			3、总结：当为一级或者二级目录时，才会有搜索框和显示搜索历史记录
+			 
+			*} -->
+	</head>
+	<body>
+		<div class="header-wrap">
+			<div class="header">
+				<img class="logo" src="img/logo.png" alt="" />
+				<img onclick="window.location.href = 'search.html'" class="imgleft icon" src="img/2018-12-25_095000.png"/>
+				<img onclick="window.location.href = 'personal.html'" class="icon" src="img/2018-12-25_095650.png"/>
+				<span>下载客户端</span>
+			</div>
+			<div class="nav">
+				<a href="index.html">首页</a>
+				<a href="course.html">课程</a>
+				<a href="obtain.html">就业班</a>
+				<a href="combat.html">实战</a>
+				<a class="now" href="javascript:;">手记</a>
+				<a href="programmer.html">猿问</a>
+			</div>
+		</div>
+		<div class="article">
+			<div class="banner-box">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      	<div class="swiper-slide">
+				      		<div class="sper-box">
+				      			<img src="img/5c22e8d409e2a3a109000383.jpg"/>
+				      			<p>慕课专栏上新，享优惠+返现，双重福利！</p>
+				      		</div>
+				      	</div>
+				      	<div class="swiper-slide">
+				      		<div class="sper-box">
+				      			<img src="img/5c2044eb000156eb04800260.jpg"/>
+				      			<p>MySQL实战 | 05 如何设计高性能的索引？</p>
+				      		</div>
+				      	</div>
+				      	<div class="swiper-slide">
+				      		<div class="sper-box">
+				      			<img src="img/5c21f3500865030805400300.jpg"/>
+				      			<p>看小白学前端如何月入2W+！</p>
+				      		</div>
+				      	</div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+				<script src="swiper-4.4.2/dist/js/swiper.min.js"></script>
+				<script>
+				    var swiper = new Swiper('.swiper-container', {
+				      	slidesPerView: 1,
+				      	spaceBetween: 30,		      	
+				      	speed:200,
+				      	autoplay:true,
+				      	autoplay:{
+				      		disableOnInteraction:false,
+				      		delay:2000
+				      	},
+				      	loop: true,
+				    });
+				    $(".swiper-slide").css({"margin-right":'0',"width":"7.65333333rem"})
+				</script>
+			</div>
+			<div class="art-nav">
+				<a class="now" href="javascript:;">推荐</a>
+				<a href="javascript:;">资讯</a>
+				<a href="javascript:;">最新文章</a>
+				<a href="javascript:;">区块链</a>
+				<a href="javascript:;">人工智能</a>
+				<a href="javascript:;">云计算/大数据</a>
+				<a href="javascript:;">前端开发</a>
+				<a href="javascript:;">后端开发</a>
+				<a href="javascript:;">移动互联</a>
+				<a href="javascript:;">工具资源</a>
+				<a href="javascript:;">职场生活</a>
+				<a href="javascript:;">幽默段子</a>
+				<a href="javascript:;">其他</a>
+				<script>
+					$(".art-nav a").click(function(){
+						$(this).addClass("now").siblings().removeClass("now")
+					})
+				</script>
+			</div>
+			<div class="page-content">
+				<ul>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c17429500016b5104800480.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5be2c93000014d9f02400240.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5bf39fee0001a83902720272-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c2417ec0001858a12400826-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c22e2dc0001621c19201080-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c21f4990001318206500650-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c21cc9600018b5819201280-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c20c71f00016b5104800480-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c219ff70001eb9b03000199-200-200.jpg" alt="" />
+					</li>
+					<li>
+						<div class="collector">
+							<h2>Spring Boot企业级微服务环境搭建</h2>
+							<p>码上人生&nbsp;|&nbsp;JAVA开发工程师</p>
+							<p><span>￥48.00</span>&nbsp;&nbsp;共21小节</p>
+						</div>
+						<img src="img/5c204d4e0001159b05120512-200-200.jpg" alt="" />
+					</li>
+				</ul>
+				<script>
+					$('.art-nav a').click(function(){
+						$('.page-content li:even').appendTo($(".page-content ul"))
+					})
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

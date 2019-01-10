@@ -1,0 +1,38 @@
+.scroll-top{
+	display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 9px;
+    width: 0.38rem;
+    height: 0.38rem;
+    background-image: url(../img/scroll-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+.footer{
+	margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 31;
+    box-sizing: border-box;
+    width: 100%;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -webkit-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+}
+.footer a{
+	width: 0.75rem;
+	height: 0.5rem;
+	float: left;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+.footer a img{
+	display: block;
+	margin: auto;
+	width: 0.6rem;
+	height: 0.46rem;
+}

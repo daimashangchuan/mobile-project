@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html style="background: #fff;">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/demo4.css" />
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<img class="img1" src="img/1_03.png" alt="" />
+		<div class="article">
+			<div class="head-top">
+				<h2>分类名称</h2>	
+				<p>找个有劳动纠纷的律师帮着应诉,员工离职申请仲裁具体原因:对方被辞退有四个月没有续签合同.</p>
+			</div>
+			<p class="yuan">
+				<span class="left"></span>
+				-----------------------------------------
+				<span class="right"></span>
+			</p>
+			<div class="hade-cont">
+				<p>联系人:张三</p>
+				<p>手机号:133121321</p>
+				<p>预算:$80000000-$850000000000</p>
+				<p class="ppp">实施地区:河北,石家庄</p>
+			</div>
+			<div class="art-cont">
+				<h2><span></span>请选择服务商(单选)</h2>
+				<div class="one">
+					<div class="left now">
+						<img src="img/yuan_03.png" alt="" />
+					</div>
+					<div class="right">
+						<h4>服务商名称服务商名称服务商名称服务商名称</h4>
+						<p>联系人:张三</p>
+						<p>手机号:123123121</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="left">
+						<img src="img/yuan_03.png" alt="" />
+					</div>
+					<div class="right">
+						<h4>服务商名称服务商名称服务商名称服务商名称</h4>
+						<p>联系人:张三</p>
+						<p>手机号:123123121</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="left">
+						<img src="img/yuan_03.png" alt="" />
+					</div>
+					<div class="right">
+						<h4>服务商名称服务商名称服务商名称服务商名称</h4>
+						<p>联系人:张三</p>
+						<p>手机号:123123121</p>
+					</div>
+				</div>
+				<div class="two">
+					<span>成交金额</span>
+					<input type="" placeholder="请输入付款金额" />
+					<span class="pan">元</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer">确定成交</div>
+		
+		<script>
+			var block = document.querySelectorAll(".one .left");
+			console.log(block)
+			for (let i=0;i<block.length;i++) {
+				block[i].onclick = function(){
+					for (let j=0;j<block.length;j++) {
+						block[j].classList.remove('now');
+					}
+					this.classList.add('now');
+				}
+			}
+		</script>
+	</body>
+</html>

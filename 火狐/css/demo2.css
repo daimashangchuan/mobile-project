@@ -1,0 +1,139 @@
+body{
+	position: relative;
+	width: 100%;
+	max-width: 3.75rem;
+	min-width: 1.6rem;
+	margin: 0 auto;
+	font-size: 0.13rem;
+	color: #4a4a4a;
+}
+.header{	
+	width: 3.75rem;
+	height: 1.47rem;
+	padding-top: 0.39rem;
+	background: #ff6633;
+	box-sizing: border-box;
+	color: #fff;
+}
+.top h1{
+	font-size: 0.24rem;
+	text-align: center;	
+	margin-bottom: 0.06rem;
+}
+.top p{
+	font-size: 0.12rem;
+	text-align: center;	
+	margin-bottom: 0.1rem;
+}
+.head{
+	width: 3.36rem;
+	height: 1.2rem;	
+	margin: 0 auto;
+	background: #fff;		
+	box-shadow: 0px 4px 20px 0px rgba(28, 41, 47, 0.16);
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	padding-top: 0.42rem;
+	box-sizing: border-box;
+}
+.head .left{
+	width: 50%;
+	float: left;
+}
+.head p{
+	margin: 0 auto 0.1rem;
+	text-align: center;	
+}
+.head .left .p1{
+	font-size: 0.11rem;	
+	color:#999999;
+}
+.head .left .p1 span{
+	font-size: 0.15rem;
+	color: red;
+}
+.head .left .p2{
+	width: 0.9rem;
+	height: 0.3rem;
+	background:#5ea2ff;
+	border-radius: 0.3rem;
+	line-height: 0.3rem;
+} 
+.head .left .p3{
+	background: #f7951b;
+}
+.article{
+	width: 3.75rem;
+	background: #ececec;
+	padding-top: 1rem;
+	box-sizing: border-box;	
+}
+.art-main{
+	width: 3.36rem;
+	margin: 0 auto;
+}
+.art-main h2{
+	margin: 0 0 0.15rem 0.16rem;		
+}
+.art-cont{
+	box-shadow: 0px 4px 20px 0px rgba(28, 41, 47, 0.16);
+	border-radius: 5px;
+	padding: 0.12rem 0.2rem 0.12rem;
+	font-size: 0.13rem;	
+	background: #fff;
+	position: relative;
+	margin-bottom: 0.1rem;
+}
+.art-cont .p1{
+	margin-bottom: 0.08rem;
+}
+.art-cont p{
+	box-sizing: border-box;
+	color:#999;
+}
+.art-cont span{
+	font-size: 0.15rem;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    bottom: 0;
+    margin: auto;
+    height: 0.2rem;
+}
+.footer{
+	width: 3.75rem;
+	height: 1.92rem;
+	background: #ff6633;
+}
+.footer .left,.footer .right{
+	width: 50%;
+	float: left;
+}
+.footer p{
+	height: 0.48rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.48rem;
+	box-shadow: 0px 1px 3px 0px rgba(28, 41, 47, 0.16);
+}
+.footer .left p{
+	background: #ff6633;		
+}
+.footer .right p{
+	background: #ff9900;
+}
+.foot{
+	text-align: center;
+	line-height: 0.48rem;
+	height: 0.48rem;
+	background: #ff9900;
+	color: #fff;
+}*/
+
+
+
+
+
+

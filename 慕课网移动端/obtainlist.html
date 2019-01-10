@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--https://m.imooc.com-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Cache-Control" content="max-age=180">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>慕课网-程序员的梦工厂</title>
+		<link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/obtainlist.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<div class="header-wrap">
+			<div class="header">
+				<p onclick="window.location.href='obtain.html'"><strong><</strong>Web前端攻城狮培养计划</p>
+				<img onclick="window.location.href = 'personal.html'" class="icon" src="img/2018-12-25_095650.png"/>
+			</div>
+		</div>	
+		<div class="article">
+			<div class="art-cont">
+				<div class="art-line"></div>
+				<p></p>
+				
+			</div>
+			<div class="imgimg">
+				<img src="img/success@2x.png" alt="" />
+				<p>完成就业班学习</p>
+			</div>
+			<div class="art-foot">
+				<div class="model-foot clear">
+					<!--<p>前端工程师</p>
+					<p>网站重构工程师</p>
+					<p>网页制作工程师</p>
+					<p>H5开发工程师</p>-->
+				</div>	
+			</div>
+			<p class="plan-final-desc">能够应用SSM常用框架结合面向对象编程思想实现项目开发，完成Linux系统下的项目部署运行。 将能胜任月薪
+           		<span>8,000RMB--15,000RMB</span>的职位
+			</p>
+			
+			<script>
+				$.ajax({
+					type:"get",
+					url:"json/obtainlist.json",
+					async:false,
+					dataType:"json"
+				}).done(function(str){
+					var search = location.search.substring(1);
+					var major = str[search]
+					var title1 = major.title1,
+						title2 = major.title2,
+						title3 = major.title3,
+						title4 = major.title4,
+						list = major.list;
+						console.log(title1)
+						console.log(list)
+					$(".model-foot").append(`
+						<p>${title1}</p>
+						<p>${title2}</p>
+						<p>${title3}</p>
+						<p>${title4}</p>
+					`)
+					for (var i=0; i<list.length; i++) {
+						$(".art-cont").append(`
+							<div class="model">
+								<div class="art-h2">${list[i].title}</div>
+								<div class="art-list">
+									<div class="art-img fl">
+										<img src="${list[i].listimg}" alt="" />
+									</div>
+									<div class="art-fr fr">
+										<h2>${list[i].listh2}</h2>
+										<p class="p1">5步骤|33门课|52小时</p>
+										<p class="p2">&hearts;6732<span>¥568.00</span></p>
+										<img src="img/play@2x.png" alt="" />
+									</div>
+								</div>
+							</div>
+						`)	
+					}
+				});
+			</script>
+		</div>
+	</body>
+</html>

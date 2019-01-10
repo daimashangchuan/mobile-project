@@ -1,0 +1,152 @@
+body{
+	position: relative;
+	width: 100%;
+	max-width: 3.75rem;
+	min-width: 1.6rem;
+	margin: 0 auto;
+	font-size: 0.13rem;
+	color: #4a4a4a;
+	background: #f4f4f4;
+}
+.img1{
+	display: block;
+	margin: 0.1rem auto 0;
+}
+.article{
+	padding:0 0.2rem;
+}
+.head-top{
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 0 0.2rem;	
+	background: #fff;
+}
+.head-top h2{
+	width: 0.96rem;
+	height: 0.28rem;
+	background: #ff6633;
+	color: #FFFFFF;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	text-align: center;
+	line-height: 0.28rem;
+	font-weight: normal;
+}
+.head-top p{
+	padding: 0.25rem 0.2rem 0;
+	box-sizing: border-box;
+	color: #666;
+	font-size: 0.15rem;	
+}
+.yuan{
+	background: #fff;
+	position: relative;
+	padding: 0 0.5rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color:#dddddd;
+	box-sizing: border-box;
+}
+.yuan span{
+	width: 0.3rem;
+	height: 0.3rem;
+	display: block;
+	position: absolute;
+	top: 0;
+	background: #f4f4f4;
+	border-radius: 50%;
+}
+.yuan .left{
+	left: -0.15rem;
+}
+.yuan .right{
+	right: -0.15rem;
+}
+.hade-cont{
+	border-radius: 5px;
+	padding: 0 0.2rem;
+	background: #fff;
+}
+.hade-cont p{
+	box-sizing: border-box;
+	padding-bottom: 0.04rem;
+	color:#999;
+}
+p.ppp{
+	padding-bottom: 0.14rem;
+}
+.art-cont h2{
+	margin-top: 0.1rem;
+}
+.one{
+	height: 0.9rem;
+	margin-top: 0.1rem;
+	position: relative;
+}
+.one .left{
+	width: 0.22rem;
+	height: 0.22rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border-radius: 50%;
+	border: 1px solid #f69d32;
+}
+.one .left img{
+	width: 0.22rem;
+	height: 0.22rem;
+	display: none;
+}
+.one .right{
+	width: 3rem;
+	float: right;
+	border-radius: 0.05rem;
+	padding: 0.1rem 0.2rem 0;	
+	background: #fff;
+	box-shadow: 0px 4px 20px 0px rgba(28, 41, 47, 0.16);
+	box-sizing: border-box;
+}
+.one .right h4{
+	margin-bottom: 0.1rem;
+}
+.one .right p{
+	box-sizing: border-box;
+	padding-bottom: 0.08rem;
+	color:#999;
+}
+.one .left.now img{
+	display: block;
+}
+.two{
+	color: #000000;
+	font-size: 0.17rem;
+	font-weight: bold;
+	line-height: 0.9rem;
+	height: 0.9rem;
+	border-top: 1px solid #e2e2e2;
+	position: relative;
+}
+.two input{
+	width: 70%;
+	padding: 0.13rem;
+	border-left: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+}
+.two .pan{
+	position: absolute;
+	display: block;
+	right: 0.05rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	font-weight: normal;
+}
+.footer{
+	height: 0.41rem;
+	text-align: center;
+	color: #fff;
+	line-height: 0.41rem;
+	background: #f7921c;
+}

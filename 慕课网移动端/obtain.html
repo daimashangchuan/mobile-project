@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Cache-Control" content="max-age=180">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>编程学习路线_开发学习路径-慕课网就业班</title>
+		<link rel="stylesheet" href="swiper-4.4.2/dist/css/swiper.min.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/obtain.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/rem.js"></script>
+	</head>
+	<body>
+		<div class="header-wrap">
+			<div class="header">
+				<img class="logo" src="img/logo.png" alt="" />
+				<img onclick="window.location.href = 'search.html'" class="imgleft icon" src="img/2018-12-25_095000.png"/>
+				<img onclick="window.location.href = 'personal.html'" class="icon" src="img/2018-12-25_095650.png"/>
+				<span>下载客户端</span>
+			</div>
+			<div class="nav">
+				<a href="index.html">首页</a>
+				<a href="course.html">课程</a>
+				<a class="now" href="javascript:;">就业班</a>
+				<a href="combat.html">实战</a>
+				<a href="rain.html">手记</a>
+				<a href="programmer.html">猿问</a>
+			</div>
+		</div>
+		<div class="article">
+			<div class="page-index">
+				<ul class="clear">
+					<li onclick="window.location.href='obtainlist.html?web'">
+						<img src="img/web@2x.png" alt="" />
+						<p>Web前端攻城狮</p>
+					</li>
+					<li onclick="window.location.href='obtainlist.html?java'">
+						<img src="img/java@2x.png" alt="" />
+						<p>Java攻城狮</p>
+					</li>
+					<li onclick="window.location.href='obtainlist.html?android'">
+						<img src="img/android@2x.png" alt="" />
+						<p>Android攻城狮</p>
+					</li>
+					<li onclick="window.location.href='obtainlist.html?php'">
+						<img src="img/php@2x.png" alt="" />
+						<p>PHP攻城狮</p>
+					</li>
+				</ul>
+			</div>
+			<div class="course-list">
+				<ul class="clear">
+					<!--<li>
+						<img src="img/59030cc50001144806000338.jpg"/>
+						<div class="course-tit">
+							<h2>前端零基础入门</h2>
+							<p class="p1">5步骤 · 33门课 · 6729人在学</p>
+							<p class="price">￥568.00</p>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$.ajax({
+					type:"get",
+					url:"json/obtain.json",
+					async:true,
+					dataType:"json"
+				}).done(function(str){
+					list = str[0].data.list
+					
+					for (var i=0; i<list.length; i++) {
+						$(".course-list ul").append(`
+							<li>
+								<img src="${list[i].courseImg}"/>
+								<div class="course-tit">
+									<h2>${list[i].courseH2}</h2>
+									<p class="p1">${list[i].courseP1}</p>
+									<p class="price">￥${list[i].price}</p>
+								</div>
+							</li>
+						`)
+					}
+					
+				});
+			})
+		</script>
+	</body>
+</html>
